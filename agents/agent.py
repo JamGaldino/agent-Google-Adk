@@ -1,10 +1,10 @@
 from google.adk.agents import LlmAgent
-#from core.config import settings
+from core.config import settings
 from google.adk.tools import google_search
 
 root_agent = LlmAgent(
     name="agent_book_recommender",
-    model="gemini-2.0-flash",
+    model=settings.MODEL,
     description="Recomenda livros tecnicos sobre tecnologia, programacao e desenvolvimento de software, com capacidade de busca no Google para encontrar titulos atualizados.",
     instruction="""
     Voce e um especialista em literatura tecnica de tecnologia.
