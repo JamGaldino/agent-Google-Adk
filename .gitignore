@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pytest / testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checkers / caches
+.mypy_cache/
+.pyre/
+pyrightconfig.json
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Static & uploads (ajuste conforme seu projeto)
+staticfiles/
+media/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Databases
+*.sqlite3
+*.db
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# FastAPI / ASGI / servers
+gunicorn.log
+uvicorn.log
+
+# Other
+*.egg
+*.manifest
+*.spec

@@ -1,0 +1,32 @@
+GOOGLE_API_KEY="YOUR_API_KEY"
+MODEL="gemini-2.0-flash"
+
+# ==========================================
+# CONFIGURAÇÕES DO GOOGLE CLOUD & VERTEX AI
+# ==========================================
+
+# Caminho absoluto para o arquivo JSON de credenciais da sua conta de serviço (Service Account)
+GOOGLE_APPLICATION_CREDENTIALS="/caminho/absoluto/para/sua/chave-de-servico.json"
+
+# ID do seu projeto no Google Cloud (não é o nome, é o ID único)
+GOOGLE_CLOUD_PROJECT="seu-project-id-aqui"
+
+# Região onde os seus recursos (Modelos, Datastores) estão hospedados
+GOOGLE_CLOUD_LOCATION="us-central1"
+
+# Flag obrigatória para o ADK rotear as chamadas para o Vertex AI (Enterprise) em vez do AI Studio (Consumer)
+GOOGLE_GENAI_USE_VERTEXAI="True"
+
+
+# ==========================================
+# VARIÁVEIS DO PROJETO / AGENTES
+# ==========================================
+
+# Caminho completo do seu Data Store criado no Vertex AI Search (Usado pelo Agente RAG)
+# Formato: projects/{project}/locations/global/collections/default_collection/dataStores/{datastore_id}
+DATASTORE_PATH="projects/seu-project-id-aqui/locations/global/collections/default_collection/dataStores/seu-datastore-id"
+
+# URL de exemplo para a API Externa (Usado pelo Agente de API/Function Calling)
+# Pode ser um endpoint real do seu ERP, ou um mock (como o GitHub Gist)
+EXTERNAL_API_URL="https://sua-api-externa.com/api/v1/endpoint"
+
